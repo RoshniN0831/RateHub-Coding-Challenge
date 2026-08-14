@@ -1,0 +1,523 @@
+.admin-stores-page {
+  min-height: 100vh;
+  background: #080c14;
+  color: #f5f7fb;
+}
+
+
+.admin-stores-message {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #080c14;
+  color: #91a0b6;
+}
+
+
+.admin-stores-message a {
+  color: #6fa1ff;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.admin-stores-nav {
+  height: 76px;
+
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.admin-stores-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: #f5f7fb;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+.admin-stores-brand-mark {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #4f8cff;
+
+  border-radius: 6px;
+
+  color: #73a4ff;
+
+  font-size: 12px;
+}
+
+
+.admin-stores-nav-right {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  color: #6fa1ff;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+.admin-stores-logout {
+  padding: 9px 15px;
+
+  background: transparent;
+
+  color: #9aa9bd;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+
+.admin-stores-logout:hover {
+  color: #ffffff;
+
+  border-color: #6fa1ff;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.admin-stores-content {
+  width: min(1100px, 90%);
+
+  margin: 0 auto;
+
+  padding: 55px 0 80px;
+}
+
+
+.admin-stores-back {
+  color: #6fa1ff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+}
+
+
+.admin-stores-header {
+  margin-top: 45px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+
+.admin-stores-header > div > span {
+  color: #6fa1ff;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.admin-stores-header h1 {
+  margin: 15px 0 12px;
+
+  font-size: clamp(42px, 6vw, 64px);
+
+  font-weight: 400;
+
+  letter-spacing: -2px;
+}
+
+
+.admin-stores-header p {
+  color: #91a0b6;
+
+  font-size: 12px;
+}
+
+
+.admin-add-store-button {
+  padding: 12px 20px;
+
+  flex-shrink: 0;
+
+  background: #4f8cff;
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 10px;
+}
+
+
+.admin-add-store-button:hover {
+  background: #6fa1ff;
+}
+
+
+/* =========================
+   ADD STORE FORM
+========================= */
+
+.admin-add-store-section {
+  margin-top: 40px;
+
+  padding: 30px;
+
+  background: #0d131e;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.10);
+
+  border-radius: 9px;
+}
+
+
+.admin-add-store-heading span {
+  color: #6fa1ff;
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.admin-add-store-heading h2 {
+  margin: 10px 0 25px;
+
+  font-size: 28px;
+
+  font-weight: 400;
+}
+
+
+.admin-add-store-form {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 22px;
+}
+
+
+.admin-form-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+.admin-form-full {
+  grid-column: 1 / -1;
+}
+
+
+.admin-form-field label {
+  color: #dce2eb;
+
+  font-size: 10px;
+}
+
+
+.admin-form-field input,
+.admin-form-field textarea,
+.admin-form-field select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px 13px;
+
+  background: #080c14;
+
+  color: #e8edf5;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 5px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 10px;
+}
+
+
+.admin-form-field textarea {
+  min-height: 90px;
+
+  resize: vertical;
+}
+
+
+.admin-form-field input:focus,
+.admin-form-field textarea:focus,
+.admin-form-field select:focus {
+  border-color: #4f8cff;
+}
+
+
+.admin-form-field small {
+  color: #71839d;
+
+  font-size: 8px;
+}
+
+
+.admin-form-submit {
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+
+.admin-form-submit button {
+  padding: 11px 20px;
+
+  background: #4f8cff;
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  font-size: 10px;
+}
+
+
+.admin-form-submit button:hover {
+  background: #6fa1ff;
+}
+
+
+.admin-form-success {
+  margin-top: 20px;
+
+  color: #7fd6aa;
+
+  font-size: 10px;
+}
+
+
+.admin-form-error {
+  margin-top: 20px;
+
+  color: #ff7c86;
+
+  font-size: 10px;
+}
+
+
+/* =========================
+   STORES LIST
+========================= */
+
+.admin-stores-list-section {
+  margin-top: 70px;
+}
+
+
+.admin-stores-list-heading span {
+  color: #6fa1ff;
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.admin-stores-list-heading h2 {
+  margin-top: 12px;
+
+  font-size: 30px;
+
+  font-weight: 400;
+}
+
+
+.admin-stores-table {
+  margin-top: 30px;
+
+  background: #0d131e;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.10);
+
+  border-radius: 9px;
+
+  overflow: hidden;
+}
+
+
+.admin-stores-table-head,
+.admin-stores-table-row {
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    1.5fr
+    0.5fr
+    0.6fr;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+.admin-stores-table-head {
+  min-height: 48px;
+
+  padding: 0 25px;
+
+  background: #101722;
+
+  color: #71839d;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+.admin-stores-table-row {
+  min-height: 80px;
+
+  padding: 0 25px;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.07);
+
+  color: #d5dce7;
+
+  font-size: 10px;
+}
+
+
+.admin-stores-table-row:hover {
+  background: rgba(79, 140, 255, 0.025);
+}
+
+
+.admin-stores-table-row > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.admin-stores-table-row strong {
+  color: #e8edf5;
+
+  font-size: 11px;
+
+  font-weight: 500;
+}
+
+
+.admin-stores-table-row small {
+  color: #71839d;
+
+  font-size: 8px;
+}
+
+
+.admin-stores-empty {
+  padding: 40px;
+
+  text-align: center;
+
+  color: #71839d;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+  .admin-stores-header {
+    display: block;
+  }
+
+
+  .admin-add-store-button {
+    margin-top: 25px;
+  }
+
+
+  .admin-add-store-form {
+    grid-template-columns: 1fr;
+  }
+
+
+  .admin-form-full,
+  .admin-form-submit {
+    grid-column: auto;
+  }
+
+
+  .admin-stores-table {
+    overflow-x: auto;
+  }
+
+
+  .admin-stores-table-head,
+  .admin-stores-table-row {
+    min-width: 850px;
+  }
+
+}

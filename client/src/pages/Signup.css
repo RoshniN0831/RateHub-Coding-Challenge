@@ -1,0 +1,234 @@
+.signup-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  background:
+    radial-gradient(
+      circle at 25% 50%,
+      rgba(79, 140, 255, 0.09),
+      transparent 35%
+    ),
+    #070a0f;
+}
+
+.signup-left {
+  padding: 45px 8%;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signup-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f5f7fa;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.signup-intro {
+  max-width: 600px;
+  margin-bottom: 70px;
+}
+
+.signup-intro h1 {
+  margin: 25px 0;
+  color: #f5f7fa;
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 1;
+  letter-spacing: -4px;
+  font-weight: 800;
+}
+
+.signup-intro h1 span {
+  color: #73a4ff;
+}
+
+.signup-intro p {
+  max-width: 490px;
+  color: #aab4c3;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.signup-points {
+  display: flex;
+  gap: 38px;
+  margin-top: 50px;
+}
+
+.signup-points div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.signup-points strong {
+  color: #73a4ff;
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+}
+
+.signup-points span {
+  color: #8d96a5;
+  font-size: 11px;
+}
+
+.signup-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.signup-card {
+  width: min(470px, 100%);
+  padding: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: #0d1118;
+  border-radius: 14px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+
+.signup-heading h2 {
+  margin: 20px 0 9px;
+  color: #f5f7fa;
+  font-size: 29px;
+  letter-spacing: -1px;
+}
+
+.signup-heading p {
+  margin-bottom: 30px;
+  color: #8d96a5;
+  font-size: 12px;
+}
+
+.signup-card .form-group {
+  margin-bottom: 17px;
+}
+
+.signup-card .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #b8c0cc;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.signup-card .form-group label span {
+  color: #596372;
+  font-weight: 400;
+}
+
+.signup-card .form-group input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  outline: none;
+  background: #080c12;
+  color: #f5f7fa;
+  font-size: 12px;
+}
+
+.signup-card .form-group input::placeholder {
+  color: #555f6e;
+}
+
+.signup-card .form-group input:focus {
+  border-color: rgba(79, 140, 255, 0.7);
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.08);
+}
+
+.signup-card .auth-submit {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  border-radius: 7px;
+  background: #4f8cff;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signup-card .auth-submit:hover {
+  background: #73a4ff;
+}
+
+.auth-success {
+  margin: 12px 0;
+  padding: 11px 13px;
+  border: 1px solid rgba(72, 210, 143, 0.25);
+  border-radius: 6px;
+  background: rgba(72, 210, 143, 0.07);
+  color: #7ee2b1;
+  font-size: 11px;
+}
+
+.signup-card .auth-footer {
+  margin-top: 25px;
+  padding-top: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: #687281;
+  font-size: 11px;
+}
+
+.signup-card .auth-footer button {
+  border: 0;
+  background: transparent;
+  color: #73a4ff;
+  cursor: pointer;
+}
+
+.signup-card .back-link {
+  display: block;
+  margin: 25px auto 0;
+  border: 0;
+  background: transparent;
+  color: #687281;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.signup-card .back-link:hover {
+  color: #f5f7fa;
+}
+
+@media (max-width: 800px) {
+  .signup-page {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-left {
+    min-height: 420px;
+    padding: 30px 7%;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .signup-intro {
+    margin-bottom: 0;
+  }
+
+  .signup-intro h1 {
+    font-size: 48px;
+  }
+
+  .signup-points {
+    gap: 22px;
+  }
+
+  .signup-right {
+    padding: 45px 7%;
+  }
+}

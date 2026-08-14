@@ -1,0 +1,341 @@
+.admin-users-page {
+  min-height: 100vh;
+  background: #080c14;
+  color: #f5f7fb;
+}
+
+
+.admin-users-message {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #080c14;
+  color: #91a0b6;
+}
+
+
+.admin-users-message a {
+  color: #6fa1ff;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.admin-users-nav {
+  height: 76px;
+
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.admin-users-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #f5f7fb;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+.admin-users-brand-mark {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #4f8cff;
+  border-radius: 6px;
+
+  color: #73a4ff;
+
+  font-size: 12px;
+}
+
+
+.admin-users-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  color: #6fa1ff;
+
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+
+.admin-users-logout {
+  padding: 9px 15px;
+
+  background: transparent;
+
+  color: #9aa9bd;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+
+.admin-users-logout:hover {
+  color: #ffffff;
+  border-color: #6fa1ff;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.admin-users-content {
+  width: min(1100px, 90%);
+
+  margin: 0 auto;
+
+  padding: 55px 0 80px;
+}
+
+
+.admin-users-back {
+  color: #6fa1ff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+}
+
+
+.admin-users-header {
+  margin-top: 45px;
+}
+
+
+.admin-users-header > span {
+  color: #6fa1ff;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.admin-users-header h1 {
+  margin: 15px 0 12px;
+
+  font-size: clamp(42px, 6vw, 64px);
+
+  font-weight: 400;
+
+  letter-spacing: -2px;
+}
+
+
+.admin-users-header p {
+  color: #91a0b6;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.admin-users-table {
+  margin-top: 55px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.10);
+
+  border-radius: 9px;
+
+  overflow: hidden;
+
+  background: #0d131e;
+}
+
+
+.admin-users-table-head,
+.admin-users-table-row {
+  display: grid;
+
+  grid-template-columns: 1.5fr 1.5fr 0.8fr;
+
+  align-items: center;
+}
+
+
+.admin-users-table-head {
+  min-height: 48px;
+
+  padding: 0 25px;
+
+  background: #101722;
+
+  color: #71839d;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+.admin-users-table-row {
+  min-height: 78px;
+
+  padding: 0 25px;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.07);
+
+  color: #d5dce7;
+
+  font-size: 10px;
+}
+
+
+.admin-users-table-row:hover {
+  background: rgba(79, 140, 255, 0.025);
+}
+
+
+/* =========================
+   USER
+========================= */
+
+.admin-user-name {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+
+.admin-user-avatar {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(79, 140, 255, 0.10);
+
+  border:
+    1px solid rgba(111, 161, 255, 0.25);
+
+  color: #6fa1ff;
+
+  font-size: 12px;
+}
+
+
+.admin-user-name div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.admin-user-name strong {
+  color: #e8edf5;
+
+  font-size: 11px;
+
+  font-weight: 500;
+}
+
+
+.admin-user-name small {
+  color: #71839d;
+
+  font-size: 8px;
+}
+
+
+/* =========================
+   ROLE
+========================= */
+
+.admin-user-role {
+  justify-self: start;
+
+  padding: 6px 9px;
+
+  border-radius: 4px;
+
+  font-size: 8px;
+
+  letter-spacing: 0.5px;
+}
+
+
+.role-admin {
+  color: #d6e3ff;
+
+  background: rgba(79, 140, 255, 0.12);
+}
+
+
+.role-store_owner {
+  color: #b8e4d0;
+
+  background: rgba(70, 180, 130, 0.10);
+}
+
+
+.role-user {
+  color: #c5cbd5;
+
+  background: rgba(255, 255, 255, 0.07);
+}
+
+
+.admin-users-empty {
+  padding: 40px;
+
+  text-align: center;
+
+  color: #71839d;
+}
+
+
+@media (max-width: 700px) {
+
+  .admin-users-table {
+    overflow-x: auto;
+  }
+
+  .admin-users-table-head,
+  .admin-users-table-row {
+    min-width: 700px;
+  }
+
+}

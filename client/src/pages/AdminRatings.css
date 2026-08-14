@@ -1,0 +1,416 @@
+.admin-ratings-page {
+  min-height: 100vh;
+
+  background: #080c14;
+
+  color: #f5f7fb;
+}
+
+
+.admin-ratings-message {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  background: #080c14;
+
+  color: #91a0b6;
+}
+
+
+.admin-ratings-message a {
+  color: #6fa1ff;
+
+  text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.admin-ratings-nav {
+  height: 76px;
+
+  padding: 0 5%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.admin-ratings-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #f5f7fb;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+.admin-ratings-brand-mark {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #4f8cff;
+
+  border-radius: 6px;
+
+  color: #73a4ff;
+
+  font-size: 12px;
+}
+
+
+.admin-ratings-nav-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  color: #6fa1ff;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+.admin-ratings-logout {
+  padding: 9px 15px;
+
+  background: transparent;
+
+  color: #9aa9bd;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+
+.admin-ratings-logout:hover {
+  color: #ffffff;
+
+  border-color: #6fa1ff;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.admin-ratings-content {
+  width: min(1100px, 90%);
+
+  margin: 0 auto;
+
+  padding: 55px 0 80px;
+}
+
+
+.admin-ratings-back {
+  color: #6fa1ff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+}
+
+
+.admin-ratings-header {
+  margin-top: 45px;
+}
+
+
+.admin-ratings-header > span {
+  color: #6fa1ff;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.admin-ratings-header h1 {
+  margin: 15px 0 12px;
+
+  font-size: clamp(42px, 6vw, 64px);
+
+  font-weight: 400;
+
+  letter-spacing: -2px;
+}
+
+
+.admin-ratings-header p {
+  color: #91a0b6;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.admin-ratings-summary {
+  width: 180px;
+
+  margin-top: 40px;
+
+  padding: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  background: #0d131e;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.10);
+
+  border-radius: 8px;
+}
+
+
+.admin-ratings-summary span {
+  color: #71839d;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+.admin-ratings-summary strong {
+  color: #e8edf5;
+
+  font-size: 28px;
+
+  font-weight: 400;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.admin-ratings-table {
+  margin-top: 35px;
+
+  background: #0d131e;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.10);
+
+  border-radius: 9px;
+
+  overflow: hidden;
+}
+
+
+.admin-ratings-table-head,
+.admin-ratings-table-row {
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    1.3fr
+    0.8fr;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+
+.admin-ratings-table-head {
+  min-height: 48px;
+
+  padding: 0 25px;
+
+  background: #101722;
+
+  color: #71839d;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+.admin-ratings-table-row {
+  min-height: 80px;
+
+  padding: 0 25px;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.07);
+
+  color: #d5dce7;
+
+  font-size: 10px;
+}
+
+
+.admin-ratings-table-row:hover {
+  background:
+    rgba(79, 140, 255, 0.025);
+}
+
+
+/* =========================
+   CUSTOMER
+========================= */
+
+.admin-rating-customer {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+
+.admin-rating-avatar {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(79, 140, 255, 0.10);
+
+  border:
+    1px solid rgba(111, 161, 255, 0.25);
+
+  color: #6fa1ff;
+
+  font-size: 12px;
+}
+
+
+.admin-rating-customer > div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.admin-rating-customer strong {
+  color: #e8edf5;
+
+  font-size: 11px;
+
+  font-weight: 500;
+}
+
+
+.admin-rating-customer small {
+  color: #71839d;
+
+  font-size: 8px;
+}
+
+
+/* =========================
+   RATING
+========================= */
+
+.admin-rating-value {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+.admin-rating-stars {
+  color: #6fa1ff;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+}
+
+
+.admin-rating-value strong {
+  color: #dce3ed;
+
+  font-size: 11px;
+
+  font-weight: 500;
+}
+
+
+.admin-ratings-empty {
+  padding: 40px;
+
+  text-align: center;
+
+  color: #71839d;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .admin-ratings-table {
+    overflow-x: auto;
+  }
+
+
+  .admin-ratings-table-head,
+  .admin-ratings-table-row {
+    min-width: 700px;
+  }
+
+}

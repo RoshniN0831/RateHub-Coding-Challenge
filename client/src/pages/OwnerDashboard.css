@@ -1,0 +1,576 @@
+.owner-dashboard-page {
+  min-height: 100vh;
+
+  background: #080c14;
+
+  color: #f5f7fb;
+}
+
+
+.owner-dashboard-message {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  background: #080c14;
+
+  color: #91a0b6;
+
+  text-align: center;
+}
+
+
+.owner-dashboard-message a {
+  color: #6fa1ff;
+
+  text-decoration: none;
+}
+
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.owner-nav {
+  height: 76px;
+
+  padding: 0 5%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.owner-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #f5f7fb;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+.owner-brand-mark {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid #4f8cff;
+
+  border-radius: 6px;
+
+  color: #73a4ff;
+
+  font-size: 12px;
+}
+
+
+.owner-nav-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 24px;
+}
+
+
+.owner-user-info {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 4px;
+}
+
+
+.owner-user-info span {
+  color: #dce2eb;
+
+  font-size: 11px;
+}
+
+
+.owner-user-info small {
+  color: #6fa1ff;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+.owner-logout {
+  padding: 9px 15px;
+
+  background: transparent;
+
+  color: #9aa9bd;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 6px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+
+.owner-logout:hover {
+  color: #ffffff;
+
+  border-color: #6fa1ff;
+}
+
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.owner-content {
+  width: min(1100px, 90%);
+
+  margin: 0 auto;
+
+  padding: 75px 0;
+}
+
+
+.owner-eyebrow {
+  color: #6fa1ff;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.owner-welcome h1 {
+  margin: 18px 0 12px;
+
+  font-size: clamp(42px, 6vw, 68px);
+
+  font-weight: 400;
+
+  letter-spacing: -3px;
+}
+
+
+.owner-welcome p {
+  max-width: 600px;
+
+  color: #91a0b6;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+
+/* =========================================
+   STORE SECTION
+========================================= */
+
+.owner-store-section {
+  margin-top: 80px;
+}
+
+
+.owner-section-heading h2 {
+  margin-top: 15px;
+
+  font-size: 32px;
+
+  font-weight: 400;
+
+  letter-spacing: -1px;
+}
+
+
+
+/* =========================================
+   STORE CARD
+========================================= */
+
+.owner-store-card {
+  margin-top: 30px;
+
+  padding: 35px;
+
+  background: #0d131e;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.11);
+
+  border-radius: 10px;
+}
+
+
+.owner-store-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding-bottom: 30px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.owner-store-category {
+  color: #71839d;
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.owner-store-header h3 {
+  margin-top: 12px;
+
+  color: #f5f7fb;
+
+  font-size: 30px;
+
+  font-weight: 400;
+}
+
+
+.owner-rating-box {
+  min-width: 130px;
+
+  padding: 18px;
+
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+
+  align-items: center;
+
+  column-gap: 10px;
+
+  background: rgba(79, 140, 255, 0.05);
+
+  border:
+    1px solid rgba(111, 161, 255, 0.20);
+
+  border-radius: 8px;
+
+  color: #6fa1ff;
+}
+
+
+.owner-rating-box strong {
+  font-size: 28px;
+
+  color: #f5f7fb;
+}
+
+
+.owner-rating-box span {
+  grid-column: 1 / -1;
+
+  margin-top: 6px;
+
+  color: #71839d;
+
+  font-size: 8px;
+}
+
+
+
+/* =========================================
+   STORE DETAILS
+========================================= */
+
+.owner-store-details {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.owner-detail {
+  min-height: 120px;
+
+  padding: 25px;
+
+  display: flex;
+
+  gap: 15px;
+
+  border-right:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  color: #6fa1ff;
+}
+
+
+.owner-detail:last-child {
+  border-right: none;
+}
+
+
+.owner-detail div {
+  min-width: 0;
+}
+
+
+.owner-detail span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #71839d;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+.owner-detail p {
+  margin: 0;
+
+  color: #d5dce7;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  word-break: break-word;
+}
+
+
+
+/* =========================================
+   STORE FOOTER
+========================================= */
+
+.owner-store-footer {
+  padding-top: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.owner-store-footer > div {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 8px;
+}
+
+
+.owner-store-footer strong {
+  color: #f5f7fb;
+
+  font-size: 25px;
+}
+
+
+.owner-store-footer span {
+  color: #71839d;
+
+  font-size: 9px;
+}
+
+
+.owner-view-store {
+  padding: 11px 18px;
+
+  background: #4f8cff;
+
+  color: #ffffff;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  transition: 0.2s ease;
+}
+
+
+.owner-view-store:hover {
+  background: #6fa1ff;
+
+  transform: translateY(-1px);
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+  .owner-store-header {
+    display: block;
+  }
+
+
+  .owner-rating-box {
+    margin-top: 25px;
+  }
+
+
+  .owner-store-details {
+    grid-template-columns: 1fr;
+  }
+
+
+  .owner-detail {
+    border-right: none;
+
+    border-bottom:
+      1px solid rgba(255, 255, 255, 0.08);
+  }
+
+
+  .owner-detail:last-child {
+    border-bottom: none;
+  }
+
+
+  .owner-store-footer {
+    display: block;
+  }
+
+
+  .owner-view-store {
+    display: inline-block;
+
+    margin-top: 20px;
+  }
+
+}
+
+/* =========================================
+   OWNER PASSWORD CHANGE
+========================================= */
+
+.owner-password-section {
+  margin-top: 80px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  border-top: 1px solid #d8d2c8;
+}
+
+.owner-password-form {
+  margin-top: 30px;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.owner-password-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.owner-password-field label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.owner-password-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 16px;
+  border: 1px solid #d8d2c8;
+  background: #ffffff;
+  font-size: 15px;
+  outline: none;
+}
+
+.owner-password-field input:focus {
+  border-color: #222222;
+}
+
+.owner-password-field small {
+  font-size: 12px;
+  color: #777;
+}
+
+.owner-password-button {
+  width: fit-content;
+  padding: 14px 24px;
+  border: none;
+  background: #222;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.owner-password-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.owner-password-success {
+  margin: 0;
+  padding: 12px 15px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-size: 14px;
+}
+
+.owner-password-error {
+  margin: 0;
+  padding: 12px 15px;
+  background: #ffebee;
+  color: #c62828;
+  font-size: 14px;
+}
