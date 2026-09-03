@@ -1,6 +1,6 @@
 # RateHub — Store Rating Platform
 
-RateHub is a full-stack web application developed for the **Roxiler Campus Process-Coding Challenge**. It allows users to discover stores, submit ratings, and manage their accounts, with dedicated functionality for store owners and administrators.
+RateHub is a full-stack web application. It allows users to discover stores, submit ratings, and manage their accounts, with dedicated functionality for store owners and administrators.
 
 ## Features
 
